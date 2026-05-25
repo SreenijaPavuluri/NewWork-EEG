@@ -1,0 +1,14 @@
+# NewWork-EEG / STELLA — Default configuration
+# Override individual fields in task-specific configs
+
+defaults:
+  - model: stella
+  - dataset: physionet
+  - training: pretrain
+
+seed: 42
+output_dir: results
+log_dir: results/logs
+checkpoint_dir: results/checkpoints
+figure_dir: results/figures
+table_dir: results/tables

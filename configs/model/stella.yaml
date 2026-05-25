@@ -1,0 +1,40 @@
+# STELLA model configuration
+name: stella
+
+# EEG input
+n_channels: 64
+sfreq: 160.0
+segment_len: 640        # samples (4s × 160Hz)
+
+# Tokenizer
+patch_size: 40          # 0.25s patches
+patch_stride: 20        # 50% overlap → 30 patches for 4s segments
+n_fft: 256
+max_patches: 64
+
+# Core dimensions
+d_model: 256
+dropout: 0.1
+
+# Spatial Transformer (shallow — kept intentionally small)
+spatial_layers: 2
+spatial_heads: 4
+spatial_ffn_expand: 2
+
+# Temporal Mamba / S3M
+mamba_layers: 3
+mamba_d_state: 16
+mamba_d_conv: 4
+mamba_expand: 2
+
+# Spectral-Temporal Fusion
+fusion_heads: 4
+fusion_type: gated       # "gated" | "router"
+
+# Pretraining projection dimensions
+proj_dim: 128
+stc_dim: 64
+n_classes_aux: 4         # PhysioNet 4-class MI
+
+# Readout
+readout: cls             # "cls" | "mean"

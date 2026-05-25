@@ -1,0 +1,19 @@
+# PhysioNet EEGMMIDB configuration
+name: physionet
+data_dir: data/physionet
+task: 4class
+n_subjects: 109          # use all 109; reduce for quick tests
+
+# Preprocessing
+preprocessing:
+  target_sfreq: 160.0
+  l_freq: 1.0
+  h_freq: 40.0
+  filter_order: 4
+  notch_freq: 60.0       # US power line (60 Hz)
+  notch_quality: 30.0
+  apply_car: true
+  clip_amplitude: 100.0  # μV
+  normalization: zscore
+  segment_len_sec: 4.0
+  tmin_sec: 0.0

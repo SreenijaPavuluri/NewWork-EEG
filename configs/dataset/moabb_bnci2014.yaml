@@ -1,0 +1,17 @@
+# MOABB BNCI2014_001 (BCI Competition IV-2a) configuration
+name: BNCI2014_001
+data_dir: data/moabb
+n_subjects: 9
+
+preprocessing:
+  target_sfreq: 160.0
+  l_freq: 1.0
+  h_freq: 40.0
+  filter_order: 4
+  notch_freq: 50.0       # European power line
+  notch_quality: 30.0
+  apply_car: true
+  clip_amplitude: 100.0
+  normalization: zscore
+  segment_len_sec: 4.0
+  tmin_sec: 0.0

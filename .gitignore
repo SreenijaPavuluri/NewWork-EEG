@@ -1,0 +1,52 @@
+# Data (downloaded, not committed)
+data/
+*.edf
+*.gdf
+*.bdf
+*.set
+*.mat
+
+# Results (generated, not committed — regenerate via scripts)
+results/checkpoints/
+results/logs/
+
+# Figures and tables ARE committed when final
+# results/figures/
+# results/tables/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+.venv/
+venv/
+*.env
+
+# Logs
+*.log
+
+# Tensorboard
+runs/
