@@ -1,0 +1,8 @@
+Model,Type,Params (M),Acc (%),κ,F1 (%),AUC
+EEGNet,Supervised,0.01,56.25,0.4166,56.39,0.7760
+ShallowConvNet,Supervised,0.12,55.56,0.4072,55.64,0.7720
+DeepConvNet,Supervised,0.12,55.69,0.4095,55.68,0.7862
+VanillaTransformer,Supervised,1.12,40.97,0.2128,41.26,0.6600
+CNN+Transformer,Supervised,0.52,45.83,0.2779,45.77,0.7206
+MIRepNet,Supervised,0.14,43.61,0.2486,41.13,0.6939
+STELLA (Ours),Self-supervised + FT,0.68,47.92,0.3049,47.94,0.7281

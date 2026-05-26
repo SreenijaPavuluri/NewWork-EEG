@@ -1,0 +1,8 @@
+Model,Params (M),Training Type
+EEGNet,0.01,Supervised
+ShallowConvNet,0.12,Supervised
+DeepConvNet,0.12,Supervised
+VanillaTransformer,1.12,Supervised
+CNN+Transformer,0.52,Supervised
+MIRepNet,0.14,Supervised
+STELLA (Ours),0.68,Self-supervised + FT
