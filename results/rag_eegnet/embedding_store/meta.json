@@ -1,0 +1,5 @@
+{
+  "d_model": 256,
+  "use_cosine": true,
+  "n_trials": 3060
+}
